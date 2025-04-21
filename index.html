@@ -1,88 +1,92 @@
 <!DOCTYPE html>
-<html lang="es-MX">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FaradAILabs - Cursos de Inteligencia Artificial</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <style>
-    .hero {
-      background-image: url('https://via.placeholder.com/1920x1080'); /* Reemplaza con tu imagen */
-      background-size: cover;
-      background-position: center;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FaradAILabs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+        header {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        h1, h2 {
+            margin-bottom: 20px;
+        }
+        .socials {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .socials a {
+            text-decoration: none;
+            color: white;
+            font-size: 24px;
+            padding: 10px 15px;
+            border-radius: 50%;
+            background-color: #555;
+            transition: background-color 0.3s;
+        }
+        .socials a:hover {
+            background-color: #0077ff;
+        }
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
 </head>
-<body class="font-sans bg-gray-100">
+<body>
+    <header>
+        <h1>FaradAILabs</h1>
+        <p>Impulsando tu futuro con cursos innovadores en tecnología e inteligencia artificial</p>
+    </header>
 
-  <!-- Hero Section -->
-  <header class="hero h-screen flex items-center justify-center bg-gradient-to-t from-black via-transparent to-transparent">
-    <div class="text-center text-white p-6">
-      <h1 class="text-5xl font-bold mb-4">¡Bienvenido a FaradAILabs!</h1>
-      <p class="text-xl mb-6">Cursos especializados en Inteligencia Artificial para profesionales como tú.</p>
-      <a href="#cursos" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded-full text-lg">Ver Cursos</a>
-    </div>
-  </header>
+    <section>
+        <h2>¿Quiénes somos?</h2>
+        <p>FaradAILabs es una empresa dedicada a ofrecer cursos prácticos y de alta calidad en áreas clave como inteligencia artificial, desarrollo web, ciencia de datos, y más. Nuestra misión es capacitar a la próxima generación de profesionales tecnológicos.</p>
 
-  <!-- Cursos Section -->
-  <section id="cursos" class="py-16 bg-white">
-    <div class="container mx-auto text-center">
-      <h2 class="text-4xl font-semibold mb-8">Nuestros Cursos</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Curso 1 -->
-        <div class="bg-gray-200 p-6 rounded-lg shadow-lg">
-          <h3 class="text-2xl font-semibold mb-4">Curso de Machine Learning</h3>
-          <p class="text-gray-700 mb-4">Aprende los fundamentos del aprendizaje automático y cómo aplicarlos en proyectos reales.</p>
-          <a href="#" class="text-blue-600 hover:underline">Más información</a>
+        <h2>Nuestros cursos</h2>
+        <ul>
+            <li>Introducción a la Inteligencia Artificial</li>
+            <li>Machine Learning aplicado</li>
+            <li>Desarrollo Web Full Stack</li>
+            <li>Análisis de Datos con Python</li>
+            <li>Automatización con Python</li>
+        </ul>
+
+        <h2>Conéctate con nosotros</h2>
+        <div class="socials">
+            <a href="https://facebook.com/FaradAILabs" target="_blank" title="Facebook">📘</a>
+            <a href="https://instagram.com/FaradAILabs" target="_blank" title="Instagram">📸</a>
+            <a href="https://tiktok.com/@FaradAILabs" target="_blank" title="TikTok">🎵</a>
+            <a href="https://youtube.com/@FaradAILabs" target="_blank" title="YouTube">▶️</a>
+            <a href="https://wa.me/1234567890" target="_blank" title="WhatsApp">💬</a>
         </div>
-        <!-- Curso 2 -->
-        <div class="bg-gray-200 p-6 rounded-lg shadow-lg">
-          <h3 class="text-2xl font-semibold mb-4">Curso de Deep Learning</h3>
-          <p class="text-gray-700 mb-4">Explora redes neuronales profundas y su implementación en tareas complejas.</p>
-          <a href="#" class="text-blue-600 hover:underline">Más información</a>
-        </div>
-        <!-- Curso 3 -->
-        <div class="bg-gray-200 p-6 rounded-lg shadow-lg">
-          <h3 class="text-2xl font-semibold mb-4">Curso de Procesamiento de Lenguaje Natural</h3>
-          <p class="text-gray-700 mb-4">Domina técnicas de NLP para analizar y generar texto de manera efectiva.</p>
-          <a href="#" class="text-blue-600 hover:underline">Más información</a>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Redes Sociales Section -->
-  <section class="py-16 bg-gray-100">
-    <div class="container mx-auto text-center">
-      <h2 class="text-4xl font-semibold mb-8">Síguenos en Redes Sociales</h2>
-      <div class="flex justify-center gap-6">
-        <a href="https://www.instagram.com/faradailabs" target="_blank" class="text-4xl text-pink-600 hover:text-pink-700"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.facebook.com/faradailabs" target="_blank" class="text-4xl text-blue-600 hover:text-blue-700"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.youtube.com/c/faradailabs" target="_blank" class="text-4xl text-red-600 hover:text-red-700"><i class="fab fa-youtube"></i></a>
-        <a href="https://www.tiktok.com/@faradailabs" target="_blank" class="text-4xl text-black hover:text-gray-700"><i class="fab fa-tiktok"></i></a>
-        <a href="https://wa.me/521234567890" target="_blank" class="text-4xl text-green-600 hover:text-green-700"><i class="fab fa-whatsapp"></i></a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer Section -->
-  <footer class="bg-gray-800 text-white py-8">
-    <div class="container mx-auto text-center">
-      <p>&copy; 2025 FaradAILabs. Todos los derechos reservados.</p>
-    </div>
-  </footer>
-
-  <script>
-    // Mostrar alerta de bienvenida al cargar la página
-    window.onload = function() {
-      Swal.fire({
-        title: '¡Bienvenido a FaradAILabs!',
-        text: 'Explora nuestros cursos y síguenos en redes sociales.',
-        icon: 'info',
-        confirmButtonText: '¡Entendido!'
-      });
-    };
+    <footer>
+        <p>&copy; 2025 FaradAILabs. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
   </script>
 
 </body>
